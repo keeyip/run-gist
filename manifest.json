@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "(run-gist ..)",
+  "description": "Run a gist, just like bl.ocks.org",
+  "version": "0.0.1",
+
+  "permissions": [
+    "https://api.github.com/",
+    "tabs"
+  ],
+  "background": {
+      "page": "background.html"
+  },
+  "page_action": {
+    "default_icon": {
+        "38": "icon.png"
+    },
+    "default_title": "(run-gist ..)"
+  },
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://github.com https://rawgithub.com 'unsafe-eval'; object-src 'self'"
+}
